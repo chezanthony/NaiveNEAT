@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b10fe84-2f83-4962-b5be-7187ffbeffa6" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="NeuralNetwork" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1W4yN1pyrpg4Y3cP9ttcI4oWL3Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/NeuralNetwork_Test" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tony\PycharmProjects\NeuralNetwork\NeuralNetworkCore" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tony\PycharmProjects\NeuralNetwork\NeuralNetwork_Test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests in NodeTest.py">
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NeuralNetwork" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration name="Unittests for NetworkTest.CNetworkTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="NeuralNetwork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralNetwork_Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;NetworkTest.CNetworkTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for NodeMutatorTest.CNodeMutatorTest.test_node_split" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="NeuralNetwork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralNetwork_Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;NodeMutatorTest.CNodeMutatorTest.test_node_split&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in MutatorTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="NeuralNetwork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralNetwork_Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/NeuralNetwork_Test/MutatorTest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in NodeMutatorTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="NeuralNetwork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralNetwork_Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/NeuralNetwork_Test/NodeMutatorTest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in NodeTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="NeuralNetwork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralNetwork_Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/NeuralNetwork_Test/NodeTest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.Unittests in MutatorTest.py" />
+      <item itemvalue="Python tests.Unittests for NetworkTest.CNetworkTest" />
+      <item itemvalue="Python tests.Unittests for NodeMutatorTest.CNodeMutatorTest.test_node_split" />
+      <item itemvalue="Python tests.Unittests in NodeMutatorTest.py" />
+      <item itemvalue="Python tests.Unittests in NodeTest.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in NodeTest.py" />
+        <item itemvalue="Python tests.Unittests in NodeMutatorTest.py" />
+        <item itemvalue="Python tests.Unittests for NodeMutatorTest.CNodeMutatorTest.test_node_split" />
+        <item itemvalue="Python tests.Unittests for NetworkTest.CNetworkTest" />
+        <item itemvalue="Python tests.Unittests in MutatorTest.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b10fe84-2f83-4962-b5be-7187ffbeffa6" name="Default" comment="" />
+      <created>1559755622402</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559755622402</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1345" height="169" key="GridCell.Tab.0.bottom" timestamp="1596656194195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596656194195" />
+    <state width="1345" height="169" key="GridCell.Tab.0.center" timestamp="1596656194195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596656194195" />
+    <state width="1345" height="169" key="GridCell.Tab.0.left" timestamp="1596656194193">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596656194193" />
+    <state width="1345" height="169" key="GridCell.Tab.0.right" timestamp="1596656194195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596656194195" />
+    <state width="1345" height="214" key="GridCell.Tab.1.bottom" timestamp="1596482534315">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596482534315" />
+    <state width="1345" height="214" key="GridCell.Tab.1.center" timestamp="1596482534315">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1596482534315" />
+    <state width="1345" height="214" key="GridCell.Tab.1.left" timestamp="1596482534315">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1596482534315" />
+    <state width="1345" height="214" key="GridCell.Tab.1.right" timestamp="1596482534315">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1596482534315" />
+    <state x="184" y="7" key="SettingsEditor" timestamp="1596480192484">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596480192484" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1597994600650">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597994600650" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NeuralNetworkCore/Mutator.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="mock_mutate_connection_deletion" language="Python" />
+        <watch expression="mock_mutate_connection_addition" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
