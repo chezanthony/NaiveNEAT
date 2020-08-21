@@ -14,9 +14,11 @@ class CNode(CGene):
         self._activation_Function_Type = activation_function_type
 
         CGene.__init__(self, n_innovation_number)
-        CGene.set_attribute(NetworkConstants.NODE_TYPE,
+        CGene.set_attribute(self,
+                            NetworkConstants.NODE_TYPE,
                             self._node_Type)
-        CGene.set_attribute(NetworkConstants.ACTIVATION_FUNCTION_TYPE,
+        CGene.set_attribute(self,
+                            NetworkConstants.ACTIVATION_FUNCTION_TYPE,
                             self._activation_Function_Type)
 
     def __hash__(self):
