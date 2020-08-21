@@ -6,8 +6,8 @@ class CGeneAttribute:
     def __eq__(self, other):
         b_return = False
 
-        if(self._s_Attribute_Name == other._s_Attribute_name and
-           self._attribute_Value == other._s_Attribute_name):
+        if(self._s_Attribute_Name == other._s_Attribute_Name and
+           self._attribute_Value == other._attribute_Value):
             b_return = True
 
         return b_return
