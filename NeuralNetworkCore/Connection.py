@@ -16,13 +16,17 @@ class CConnection(CGene):
         self.b_Is_Enabled = b_is_enabled
 
         CGene.__init__(self, n_innovation_number)
-        CGene.set_attribute(NetworkConstants.INPUT_NODE,
+        CGene.set_attribute(self,
+                            NetworkConstants.INPUT_NODE,
                             self.n_Input_Node)
-        CGene.set_attribute(NetworkConstants.OUTPUT_NODE,
+        CGene.set_attribute(self,
+                            NetworkConstants.OUTPUT_NODE,
                             self.n_Output_Node)
-        CGene.set_attribute(NetworkConstants.WEIGHT,
+        CGene.set_attribute(self,
+                            NetworkConstants.WEIGHT,
                             self.n_Weight)
-        CGene.set_attribute(NetworkConstants.IS_ENABLED,
+        CGene.set_attribute(self,
+                            NetworkConstants.IS_ENABLED,
                             self.b_Is_Enabled)
 
     def __hash__(self):

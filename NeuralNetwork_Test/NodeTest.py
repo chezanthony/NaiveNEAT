@@ -16,10 +16,10 @@ class CNodeTest(unittest.TestCase):
                   self.test_Activation_Function)
 
     def test_hash(self):
-        n_actual_hash =\
-            self.node.__hash__()
+        n_expected_hash = hash(self.n_Test_Innovation_Number)
+        n_actual_hash = hash(self.node)
 
-        self.assertEqual(self.n_Test_Innovation_Number,
+        self.assertEqual(n_expected_hash,
                          n_actual_hash)
 
     def test_equality(self):

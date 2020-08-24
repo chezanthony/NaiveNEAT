@@ -19,10 +19,10 @@ class CConnectionTest(unittest.TestCase):
                         self.b_Test_Is_Enabled)
 
     def test_hash(self):
-        n_actual_hash =\
-            self.connection.__hash__()
+        n_expected_hash = hash(self.n_Test_Innovation_Number)
+        n_actual_hash = hash(self.connection)
 
-        self.assertEqual(self.n_Test_Innovation_Number,
+        self.assertEqual(n_expected_hash,
                          n_actual_hash)
 
     def test_equality(self):
