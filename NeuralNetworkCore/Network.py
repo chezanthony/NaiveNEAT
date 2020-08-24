@@ -1,7 +1,8 @@
+from NeuralNetworkCore.Genome import CGenome
 from NeuralNetworkCore.Mutator import CMutator
 
 
-class CNetwork:
+class CNetwork(CGenome):
     def __init__(self,
                  n_id,
                  network_params):

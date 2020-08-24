@@ -8,7 +8,7 @@ class CGene:
         self._gene_attributes = dict()
 
     def __hash__(self):
-        return self._n_Innovation_Number
+        return hash(self._n_Innovation_Number)
 
     def get_innovation_number(self):
         return self._n_Innovation_Number
