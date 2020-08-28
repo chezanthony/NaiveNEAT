@@ -11,6 +11,8 @@ class CNetwork(CGenome):
         self.node_Container = dict()
         self.connection_Container = dict()
 
+        CGenome.__init__(self, n_id)
+
     def get_id(self):
         return self.n_ID
 

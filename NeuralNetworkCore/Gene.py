@@ -1,7 +1,8 @@
 from NeuralNetworkCore.GeneAttribute import CGeneAttribute
+from NeuralNetworkCore.IGene import IGene
 
 
-class CGene:
+class CGene(IGene):
     def __init__(self,
                  n_innovation_number):
         self._n_Innovation_Number = n_innovation_number
