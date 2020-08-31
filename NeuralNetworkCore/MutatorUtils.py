@@ -61,13 +61,8 @@ class CMutatorUtils:
         return CMutationRandomizer.randomize_element(container)
 
     @staticmethod
-    def _get_innovation_number(container):
-        return len(container) + 1
-
-    @staticmethod
     def _create_node(nodes):
-        n_innovation_number =\
-            CMutatorUtils._get_innovation_number(nodes)
+        n_innovation_number = nodes.get_innovation_number()
 
         new_node = CNodeFactory.create_node(n_innovation_number)
 
@@ -80,16 +75,15 @@ class CMutatorUtils:
     def _create_connection(connections,
                            n_input_node_key,
                            n_output_node_key):
-        n_innovation_number =\
-            CMutatorUtils._get_innovation_number(connections)
+        n_innovation_number = connections.get_innovation_number()
         n_weight = CMutationRandomizer.randomize_value()
 
         new_connection =\
             CConnectionFactory\
-                .create_connection(n_innovation_number,
-                                   n_input_node_key,
-                                   n_output_node_key,
-                                   n_weight)
+            .create_connection(n_innovation_number,
+                               n_input_node_key,
+                               n_output_node_key,
+                               n_weight)
 
         connections.update({n_innovation_number:
                             new_connection})

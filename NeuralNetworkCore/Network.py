@@ -1,5 +1,8 @@
 from NeuralNetworkCore.Genome import CGenome
 from NeuralNetworkCore.Mutator import CMutator
+from NeuralNetworkCore.ConnectionRepository import CConnectionRepository
+from NeuralNetworkCore.NodeRepository import CNodeRepository
+from NeuralNetworkCore.InnovationNumber import CInnovationNumber
 
 
 class CNetwork(CGenome):
@@ -8,8 +11,10 @@ class CNetwork(CGenome):
                  network_params):
         self.n_ID = n_id
         self.network_Params = network_params
-        self.node_Container = dict()
-        self.connection_Container = dict()
+        self.innovation_Number = CInnovationNumber()
+        self.node_Container = CNodeRepository(None)
+        self.connection_Repository =\
+            CConnectionRepository(self.innovation_Number)
 
         CGenome.__init__(self, n_id)
 
@@ -18,7 +23,7 @@ class CNetwork(CGenome):
 
     def mutate(self):
         CMutator.mutate(self.node_Container,
-                        self.connection_Container,
+                        self.connection_Repository,
                         self.network_Params)
 
     def add_node(self, node):
@@ -29,4 +34,4 @@ class CNetwork(CGenome):
         return self.node_Container
 
     def get_connection_container(self):
-        return self.connection_Container
+        return self.connection_Repository

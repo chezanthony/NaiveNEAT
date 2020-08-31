@@ -33,11 +33,13 @@ class CNodeMutator:
         if CMutationRandomizer.is_mutation_successful(n_probability):
 
             node = CMutationRandomizer.randomize_element(nodes)
-            nodes.pop(node)
+            nodes.pop(node.get_innovation_number())
 
-            for connection in connections.values():
-                if node == connection.get_output_node():
-                    connections.pop(connection)
+            connection_to_delete =\
+                connections.get_connection_from_input_node(node)
+
+            if connection_to_delete:
+                connections.pop(connection_to_delete)
 
     @staticmethod
     def _bias_node_addition(nodes,

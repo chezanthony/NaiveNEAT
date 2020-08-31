@@ -42,15 +42,10 @@ class CConnectionMutator:
             n_input_node_key =\
                 CMutationRandomizer.randomize_element(nodes)
             n_output_node_key = \
-                CMutationRandomizer.randomize_element(nodes)
+                CMutationRandomizer.randomize_element(nodes,
+                                                      n_input_node_key)
 
             new_connection =\
                 CMutatorUtils.add_new_connection(connections,
                                                  n_input_node_key,
                                                  n_output_node_key)
-
-            n_innovation_number =\
-                new_connection.get_innovation_number()
-
-            connections.update({n_innovation_number:
-                                new_connection})
