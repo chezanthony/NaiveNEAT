@@ -14,6 +14,10 @@ class CMutationRandomizer:
         return container.get(n_key)
 
     @staticmethod
+    def randomize_list_element(list_container):
+        return random.choice(list_container)
+
+    @staticmethod
     def randomize_value():
         return random.random()
 

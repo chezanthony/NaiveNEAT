@@ -4,8 +4,10 @@ from NeuralNetworkCore.IGene import IGene
 
 class CGene(IGene):
     def __init__(self,
-                 n_innovation_number):
+                 n_innovation_number,
+                 b_is_node):
         self._n_Innovation_Number = n_innovation_number
+        self._b_Is_Node = b_is_node
         self._gene_attributes = dict()
 
     def __hash__(self):
@@ -13,6 +15,9 @@ class CGene(IGene):
 
     def get_innovation_number(self):
         return self._n_Innovation_Number
+
+    def is_node(self):
+        return self._b_Is_Node
 
     def set_attribute(self,
                       s_attribute_name,

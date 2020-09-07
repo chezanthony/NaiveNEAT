@@ -9,14 +9,18 @@ from NeuralNetworkCore.Connection import CConnection
 from NeuralNetworkCore.ConnectionRepository import CConnectionRepository
 from NeuralNetworkCore.NodeRepository import CNodeRepository
 from NeuralNetworkCore.InnovationNumber import CInnovationNumber
+from NeuralNetworkCore.GeneRepository import CGeneRepository
 
 
 class CNodeMutatorTest(unittest.TestCase):
     def setUp(self):
-        self.innovation_Number = CInnovationNumber()
-        self.test_Nodes = CNodeRepository(None)
+        self.gene_Repository = CGeneRepository()
+        self.innovation_Number = CInnovationNumber(self.gene_Repository)
+        self.test_Nodes = CNodeRepository(self.innovation_Number,
+                                          self.gene_Repository)
         self.test_Connections =\
-            CConnectionRepository(self.innovation_Number)
+            CConnectionRepository(self.innovation_Number,
+                                  self.gene_Repository)
 
         self.n_Test_Input_Node_Innovation_Number = 1
         self.test_Input_Node_Type = NodeType.INPUT

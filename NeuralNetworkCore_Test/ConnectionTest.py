@@ -39,7 +39,7 @@ class CConnectionTest(unittest.TestCase):
                         self.n_Test_Weight,
                         self.b_Test_Is_Enabled)
 
-        self.assertFalse(self.connection ==\
+        self.assertFalse(self.connection ==
                          test_connection)
 
     def test_equality_different_input_node(self):
@@ -51,7 +51,7 @@ class CConnectionTest(unittest.TestCase):
                         self.n_Test_Weight,
                         self.b_Test_Is_Enabled)
 
-        self.assertFalse(self.connection ==\
+        self.assertFalse(self.connection ==
                          test_connection)
 
     def test_equality_different_output_node(self):
@@ -63,30 +63,8 @@ class CConnectionTest(unittest.TestCase):
                         self.n_Test_Weight,
                         self.b_Test_Is_Enabled)
 
-        self.assertFalse(self.connection ==\
+        self.assertFalse(self.connection ==
                          test_connection)
-
-    def test_equality_different_weight(self):
-        test_weight = 99
-        test_connection =\
-            CConnection(self.n_Test_Innovation_Number,
-                        self.n_Test_Input_Node,
-                        self.n_Test_Output_Node,
-                        test_weight,
-                        self.b_Test_Is_Enabled)
-
-        self.assertFalse(self.connection == test_connection)
-
-    def test_equality_different_enabled_status(self):
-        test_enabled_status = False
-        test_connection =\
-            CConnection(self.n_Test_Innovation_Number,
-                        self.n_Test_Input_Node,
-                        self.n_Test_Output_Node,
-                        self.n_Test_Weight,
-                        test_enabled_status)
-
-        self.assertFalse(self.connection == test_connection)
 
     def test_get_innovation_number(self):
         n_expected_innovation_number =\

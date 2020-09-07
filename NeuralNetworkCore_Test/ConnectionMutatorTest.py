@@ -22,8 +22,13 @@ class CConnectionMutatorTest(unittest.TestCase):
            'ConnectionMutator.'
            'CConnectionMutator.'
            '_mutate_connection_addition')
+    @patch('NeuralNetworkCore.'
+           'ConnectionMutator.'
+           'CConnectionMutator.'
+           '_mutate_connection_weight')
     def test_mutate_connection_deletion_mutated(
             self,
+            mock_mutate_connection_weight,
             mock_mutate_connection_addition,
             mock_mutate_connection_deletion):
         CConnectionMutator.mutate(self.mock_Nodes,
@@ -35,6 +40,8 @@ class CConnectionMutatorTest(unittest.TestCase):
                                self.mock_Network_Params)
         mock_mutate_connection_addition.\
             assert_called()
+        mock_mutate_connection_weight.\
+            assert_called()
 
     @patch('NeuralNetworkCore.'
            'ConnectionMutator.'
@@ -44,8 +51,13 @@ class CConnectionMutatorTest(unittest.TestCase):
            'ConnectionMutator.'
            'CConnectionMutator.'
            '_mutate_connection_addition')
+    @patch('NeuralNetworkCore.'
+           'ConnectionMutator.'
+           'CConnectionMutator.'
+           '_mutate_connection_weight')
     def test_mutate_connection_addition_mutated(
             self,
+            mock_mutate_connection_weight,
             mock_mutate_connection_addition,
             mock_mutate_connection_deletion):
         CConnectionMutator.mutate(self.mock_Nodes,
@@ -57,4 +69,35 @@ class CConnectionMutatorTest(unittest.TestCase):
         mock_mutate_connection_addition.\
             assert_called_with(self.mock_Nodes,
                                self.mock_Connections,
+                               self.mock_Network_Params)
+        mock_mutate_connection_weight.\
+            assert_called()
+
+    @patch('NeuralNetworkCore.'
+           'ConnectionMutator.'
+           'CConnectionMutator.'
+           '_mutate_connection_deletion')
+    @patch('NeuralNetworkCore.'
+           'ConnectionMutator.'
+           'CConnectionMutator.'
+           '_mutate_connection_addition')
+    @patch('NeuralNetworkCore.'
+           'ConnectionMutator.'
+           'CConnectionMutator.'
+           '_mutate_connection_weight')
+    def test_mutate_connection_weight_called(
+            self,
+            mock_mutate_connection_weight,
+            mock_mutate_connection_addition,
+            mock_mutate_connection_deletion):
+        CConnectionMutator.mutate(self.mock_Nodes,
+                                  self.mock_Connections,
+                                  self.mock_Network_Params)
+
+        mock_mutate_connection_deletion.\
+            assert_called()
+        mock_mutate_connection_addition.\
+            assert_called()
+        mock_mutate_connection_weight.\
+            assert_called_with(self.mock_Connections,
                                self.mock_Network_Params)

@@ -13,7 +13,9 @@ class CNode(CGene):
         self._node_Type = node_type
         self._activation_Function_Type = activation_function_type
 
-        CGene.__init__(self, n_innovation_number)
+        CGene.__init__(self,
+                       n_innovation_number,
+                       True)
         CGene.set_attribute(self,
                             NetworkConstants.NODE_TYPE,
                             self._node_Type)
@@ -27,9 +29,9 @@ class CNode(CGene):
     def __eq__(self, other):
         b_return = False
 
-        if(self._n_Innovation_Number == other._n_Innovation_Number and
-           self._node_Type == other._node_Type and
-           self._activation_Function_Type == other._activation_Function_Type):
+        if(self._n_Innovation_Number == other.get_innovation_number() and
+           self._node_Type == other.get_node_type() and
+           self._activation_Function_Type == other.get_activation_function_type()):
             b_return = True
 
         return b_return

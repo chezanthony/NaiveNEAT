@@ -40,5 +40,7 @@ class IConnectionRepository(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def get_innovation_number(self):
+    def get_innovation_number(self,
+                              n_input_node,
+                              n_output_node):
         raise NotImplementedError

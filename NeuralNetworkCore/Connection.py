@@ -9,25 +9,27 @@ class CConnection(CGene):
                  n_output_node,
                  n_weight,
                  b_is_enabled=True):
-        self.n_Innovation_Number = n_innovation_number
-        self.n_Input_Node = n_input_node
-        self.n_Output_Node = n_output_node
-        self.n_Weight = n_weight
-        self.b_Is_Enabled = b_is_enabled
+        self._n_Innovation_Number = n_innovation_number
+        self._n_Input_Node = n_input_node
+        self._n_Output_Node = n_output_node
+        self._n_Weight = n_weight
+        self._b_Is_Enabled = b_is_enabled
 
-        CGene.__init__(self, n_innovation_number)
+        CGene.__init__(self,
+                       n_innovation_number,
+                       False)
         CGene.set_attribute(self,
                             NetworkConstants.INPUT_NODE,
-                            self.n_Input_Node)
+                            self._n_Input_Node)
         CGene.set_attribute(self,
                             NetworkConstants.OUTPUT_NODE,
-                            self.n_Output_Node)
+                            self._n_Output_Node)
         CGene.set_attribute(self,
                             NetworkConstants.WEIGHT,
-                            self.n_Weight)
+                            self._n_Weight)
         CGene.set_attribute(self,
                             NetworkConstants.IS_ENABLED,
-                            self.b_Is_Enabled)
+                            self._b_Is_Enabled)
 
     def __hash__(self):
         return CGene.__hash__(self)
@@ -35,29 +37,30 @@ class CConnection(CGene):
     def __eq__(self, other):
         b_return = False
 
-        if(self.n_Innovation_Number == other.n_Innovation_Number and
-           self.n_Input_Node == other.n_Input_Node and
-           self.n_Output_Node == other.n_Output_Node and
-           self.n_Weight == other.n_Weight and
-           self.b_Is_Enabled == other.b_Is_Enabled):
+        if(self._n_Innovation_Number == other.get_innovation_number() and
+           self._n_Input_Node == other.get_input_node() and
+           self._n_Output_Node == other.get_output_node()):
             b_return = True
 
         return b_return
 
     def get_input_node(self):
-        return self.n_Input_Node
+        return self._n_Input_Node
 
     def get_output_node(self):
-        return self.n_Output_Node
+        return self._n_Output_Node
 
     def set_output_node(self, n_output_node):
-        self.n_Output_Node = n_output_node
+        self._n_Output_Node = n_output_node
 
     def get_weight(self):
-        return self.n_Weight
+        return self._n_Weight
+
+    def set_weight(self, n_weight):
+        self._n_Weight = n_weight
 
     def is_enabled(self):
-        return self.b_Is_Enabled
+        return self._b_Is_Enabled
 
     def set_is_enabled(self, b_is_enabled):
-        self.b_Is_Enabled = b_is_enabled
+        self._b_Is_Enabled = b_is_enabled

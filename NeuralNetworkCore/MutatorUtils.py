@@ -1,21 +1,11 @@
 from NeuralNetworkCore.MutationRandomizer import CMutationRandomizer
 from NeuralNetworkCore.NodeFactory import CNodeFactory
 from NeuralNetworkCore.ConnectionFactory import CConnectionFactory
+from NeuralNetworkCore.NodeType import NodeType
+from NeuralNetworkCore.ActivationFunctionType import ActivationFunctionType
 
 
 class CMutatorUtils:
-
-    @staticmethod
-    def is_mutation_successful(s_network_param,
-                               network_params):
-        b_return = False
-        n_probability =\
-            network_params.get_param(s_network_param)
-
-        if CMutationRandomizer.is_mutation_successful(n_probability):
-            b_return = True
-
-        return b_return
 
     @staticmethod
     def add_new_bias_node(nodes, connections):
@@ -62,9 +52,22 @@ class CMutatorUtils:
 
     @staticmethod
     def _create_node(nodes):
-        n_innovation_number = nodes.get_innovation_number()
 
-        new_node = CNodeFactory.create_node(n_innovation_number)
+        # TODO: Static list would have to be updated everytime a new
+        #       activation function is added.
+        #       Change to something dynamic.
+        activation_function_types = [ActivationFunctionType.LINEAR,
+                                     ActivationFunctionType.SIGMOID]
+
+        activation_function_type =\
+            CMutationRandomizer.\
+            randomize_list_element(activation_function_types)
+        n_innovation_number = nodes.get_innovation_number(NodeType.HIDDEN,
+                                                          activation_function_type)
+
+        new_node = CNodeFactory.create_node(n_innovation_number,
+                                            NodeType.HIDDEN,
+                                            activation_function_type)
 
         nodes.update({n_innovation_number:
                       new_node})
@@ -75,7 +78,9 @@ class CMutatorUtils:
     def _create_connection(connections,
                            n_input_node_key,
                            n_output_node_key):
-        n_innovation_number = connections.get_innovation_number()
+        n_innovation_number =\
+            connections.get_innovation_number(n_input_node_key,
+                                              n_output_node_key)
         n_weight = CMutationRandomizer.randomize_value()
 
         new_connection =\

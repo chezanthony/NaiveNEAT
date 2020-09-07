@@ -7,7 +7,9 @@ from NeuralNetworkCore.ActivationFunctionType import ActivationFunctionType
 class CGeneTest(unittest.TestCase):
     def setUp(self):
         self._n_Test_Innovation_Number = 1
-        self._gene = CGene(self._n_Test_Innovation_Number)
+        self._b_Test_Is_Node = True
+        self._gene = CGene(self._n_Test_Innovation_Number,
+                           self._b_Test_Is_Node)
 
     def test_hash(self):
         n_actual_hash = self._gene.__hash__()

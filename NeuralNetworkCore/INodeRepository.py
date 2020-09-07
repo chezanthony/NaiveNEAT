@@ -12,5 +12,7 @@ class INodeRepository(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def get_innovation_number(self):
+    def get_innovation_number(self,
+                              node_type,
+                              activation_function_type):
         raise NotImplementedError

@@ -3,9 +3,10 @@ from NeuralNetworkCore.IConnectionRepository import IConnectionRepository
 
 class CConnectionRepository(IConnectionRepository):
 
-    def __init__(self, innovation_number):
+    def __init__(self, innovation_number, gene_repository):
         self._connections = dict()
         self._innovation_Number = innovation_number
+        self._gene_Repository = gene_repository
         IConnectionRepository.__init__(self)
 
     def __hash__(self):
@@ -21,10 +22,10 @@ class CConnectionRepository(IConnectionRepository):
         return len(self._connections)
 
     def get(self, n_innovation_number):
-        return self._connections[n_innovation_number]
+        return self._connections.get(n_innovation_number)
 
     def get_connection(self, n_innovation_number):
-        return self._connections[n_innovation_number]
+        return self.get(n_innovation_number)
 
     def get_connection_from_input_node(self, input_node):
 
@@ -54,6 +55,7 @@ class CConnectionRepository(IConnectionRepository):
 
     def update(self, iterable):
         self._connections.update(iterable)
+        self._gene_Repository.update(iterable)
 
     def pop(self, connection):
         n_innovation_number = connection.get_innovation_number()
@@ -62,5 +64,10 @@ class CConnectionRepository(IConnectionRepository):
     def keys(self):
         return self._connections.keys()
 
-    def get_innovation_number(self):
-        return self._innovation_Number.get_innovation_number()
+    def get_innovation_number(self,
+                              n_input_node,
+                              n_output_node):
+        return self.\
+            _innovation_Number.\
+            get_connection_innovation_number(n_input_node,
+                                             n_output_node)
