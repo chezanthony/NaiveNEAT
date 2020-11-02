@@ -22,8 +22,7 @@ class CInnovationNumber:
                 n_return = gene.get_innovation_number()
 
         if -1 == n_return:
-            self._n_Innovation_Number += 1
-            n_return = self._n_Innovation_Number
+            n_return = self.get_innovation_number()
 
         return n_return
 
@@ -40,7 +39,6 @@ class CInnovationNumber:
                 n_return = gene.get_innovation_number()
 
         if -1 == n_return:
-            self._n_Innovation_Number += 1
-            n_return = self._n_Innovation_Number
+            n_return = self.get_innovation_number()
 
         return n_return

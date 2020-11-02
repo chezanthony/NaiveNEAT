@@ -29,6 +29,12 @@ class CNetwork(CGenome):
     def get_id(self):
         return self.n_ID
 
+    def get_network_params(self):
+        return self.network_Params
+
+    def get_gene_repository(self):
+        return self.gene_Repository
+
     def mutate(self):
         CMutator.mutate(self.node_Repository,
                         self.connection_Repository,
@@ -77,6 +83,13 @@ class CNetwork(CGenome):
             genes.update({key: node})
 
         return genes
+
+    def set_genes(self, genes):
+        for gene in genes:
+            if gene.is_node():
+                self.node_Repository.update(gene)
+            else:
+                self.connection_Repository.update(gene)
 
     def _update_innovation_numbers(self):
         n_node_min_number =\
