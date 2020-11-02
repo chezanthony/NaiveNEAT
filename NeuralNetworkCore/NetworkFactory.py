@@ -6,13 +6,15 @@ from NeuralNetworkCore.NodeType import NodeType
 class CNetworkFactory:
 
     @staticmethod
-    def create_network(network_params,
+    def create_network(n_network_id,
+                       network_params,
+                       gene_repository,
                        n_input_nodes=1,
-                       n_output_nodes=1,
-                       n_network_id=1):
+                       n_output_nodes=1):
 
         network = CNetwork(n_network_id,
-                           network_params)
+                           network_params,
+                           gene_repository)
 
         for nIndex in range(n_input_nodes):
             node =\

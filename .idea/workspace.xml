@@ -19,28 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b10fe84-2f83-4962-b5be-7187ffbeffa6" name="Default" comment="Implement Genome class&#10;Update tests.&#10;Create IGenome class.&#10;Create NodeRepository and ConnectionRepository implementations.">
-      <change afterPath="$PROJECT_DIR$/NeuralNetworkCore/Environment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeuralNetworkCore/GeneRepository.py" afterDir="false" />
+    <list default="true" id="8b10fe84-2f83-4962-b5be-7187ffbeffa6" name="Default" comment="Remove NetworkTest.">
+      <change afterPath="$PROJECT_DIR$/NeuralNetworkCore/ReproductionUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/Connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/Connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/ConnectionMutator.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/ConnectionMutator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/ConnectionRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/ConnectionRepository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/Gene.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/Gene.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/IConnectionRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/IConnectionRepository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/INodeRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/INodeRepository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/InnovationNumber.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/InnovationNumber.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/MutationRandomizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/MutationRandomizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/MutatorUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/MutatorUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/Environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/Environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/GeneRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/GeneRepository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/Genome.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/Genome.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/Network.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/Network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/Node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/NetworkFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/NetworkFactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/NodeRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/NodeRepository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/Reproduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/Reproduction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore_Test/ConnectionMutatorTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore_Test/ConnectionMutatorTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore_Test/ConnectionTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore_Test/ConnectionTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore_Test/GeneTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore_Test/GeneTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeuralNetworkCore_Test/NetworkTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore_Test/NetworkTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore_Test/NodeMutatorTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore_Test/NodeMutatorTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +69,7 @@
       <recent name="C:\Users\Tony\PycharmProjects\NeuralNetwork\NeuralNetwork_Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in ConnectionMutatorTest.py">
+  <component name="RunManager" selected="Python tests.Unittests in NodeTest.py">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,48 +88,6 @@
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <method />
-    </configuration>
-    <configuration name="Unittests in ConnectionMutatorTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="NeuralNetwork" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralNetworkCore_Test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/NeuralNetworkCore_Test/ConnectionMutatorTest.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in ConnectionTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="NeuralNetwork" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralNetworkCore_Test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/NeuralNetworkCore_Test/ConnectionTest.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in GeneAttributeTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="NeuralNetwork" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralNetworkCore_Test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/NeuralNetworkCore_Test/GeneAttributeTest.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
     </configuration>
     <configuration name="Unittests in GeneTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="NeuralNetwork" />
@@ -169,20 +117,62 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in NetworkTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="NeuralNetwork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralNetworkCore_Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/NeuralNetworkCore_Test/NetworkTest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in NodeMutatorTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="NeuralNetwork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralNetworkCore_Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/NeuralNetworkCore_Test/NodeMutatorTest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in NodeTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="NeuralNetwork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralNetworkCore_Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/NeuralNetworkCore_Test/NodeTest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in ConnectionMutatorTest.py" />
-      <item itemvalue="Python tests.Unittests in ConnectionTest.py" />
-      <item itemvalue="Python tests.Unittests in GeneAttributeTest.py" />
       <item itemvalue="Python tests.Unittests in GeneTest.py" />
       <item itemvalue="Python tests.Unittests in MutatorTest.py" />
+      <item itemvalue="Python tests.Unittests in NetworkTest.py" />
+      <item itemvalue="Python tests.Unittests in NodeMutatorTest.py" />
+      <item itemvalue="Python tests.Unittests in NodeTest.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in ConnectionMutatorTest.py" />
-        <item itemvalue="Python tests.Unittests in ConnectionTest.py" />
-        <item itemvalue="Python tests.Unittests in GeneAttributeTest.py" />
-        <item itemvalue="Python tests.Unittests in GeneTest.py" />
+        <item itemvalue="Python tests.Unittests in NodeTest.py" />
+        <item itemvalue="Python tests.Unittests in NodeMutatorTest.py" />
+        <item itemvalue="Python tests.Unittests in NetworkTest.py" />
         <item itemvalue="Python tests.Unittests in MutatorTest.py" />
+        <item itemvalue="Python tests.Unittests in GeneTest.py" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598893897377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update how innovation number is assigned.&#10;Create global repository for genes.&#10;Create environment class CEnvironment.">
+      <created>1599505416323</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599505416323</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Remove NetworkTest.">
+      <created>1599505504342</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599505504342</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,7 +242,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implement Genome class&#10;Update tests.&#10;Create IGenome class." />
     <MESSAGE value="Implement Genome class&#10;Update tests.&#10;Create IGenome class.&#10;Create NodeRepository and ConnectionRepository implementations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Genome class&#10;Update tests.&#10;Create IGenome class.&#10;Create NodeRepository and ConnectionRepository implementations." />
+    <MESSAGE value="Update how innovation number is assigned.&#10;Create global repository for genes.&#10;Create environment class CEnvironment." />
+    <MESSAGE value="Remove NetworkTest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove NetworkTest." />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598018541789">
@@ -253,55 +259,59 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="223" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1599469453855" />
-    <state width="1899" height="348" key="GridCell.Tab.0.bottom" timestamp="1599502183056">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1604309385381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596656194195" />
-    <state width="1899" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599502183056" />
-    <state width="1899" height="348" key="GridCell.Tab.0.center" timestamp="1599502183056">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604309385381" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1604309385381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596656194195" />
-    <state width="1899" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599502183056" />
-    <state width="1899" height="348" key="GridCell.Tab.0.left" timestamp="1599502183055">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604309385381" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1604309385381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596656194193" />
-    <state width="1899" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599502183055" />
-    <state width="1899" height="348" key="GridCell.Tab.0.right" timestamp="1599502183056">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604309385381" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1604309385381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596656194195" />
-    <state width="1899" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599502183056" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1599502183056">
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604309385381" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1604307115507">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596482534315" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599502183056" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1599502183056">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604307115507" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1604307115507">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1596482534315" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599502183056" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1599502183056">
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604307115507" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1604307115507">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1596482534315" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599502183056" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1599502183056">
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604307115507" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1604307115507">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1596482534315" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599502183056" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604307115507" />
+    <state x="761" y="222" key="RollbackChangesDialog" timestamp="1604304828080">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604304828080" />
     <state x="259" y="10" key="SettingsEditor" timestamp="1598033115835">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596480192484" />
     <state x="259" y="10" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598033115835" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598893948734">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599505509400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598893948734" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599505509400" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1597994600650">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -310,10 +320,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598121834311" />
-    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1598108651602">
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1604301097080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598108651602" />
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604301097080" />
     <state x="803" y="305" key="refactoring.ChangeSignatureDialog" timestamp="1598882772563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -332,9 +342,9 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/NeuralNetworkCore_Test/ConnectionMutatorTest.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/NeuralNetworkCore/NodeRepository.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

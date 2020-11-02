@@ -11,6 +11,12 @@ class CGenome(IGenome):
     def __hash__(self):
         return hash(self._n_ID)
 
+    def __gt__(self, other):
+        return self._n_Fitness > other.get_fitness()
+
+    def __lt__(self, other):
+        return self._n_Fitness < other.get_fitness()
+
     def get_id(self):
         return self._n_ID
 

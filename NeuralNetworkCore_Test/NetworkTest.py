@@ -9,9 +9,25 @@ from NeuralNetworkCore.Connection import CConnection
 class CNetworkTest(unittest.TestCase):
     def setUp(self):
         self._n_Test_ID = 1
+
         self._mock_Network_Params = Mock()
+
+        self._mock_Gene = Mock()
+        self._mock_Gene.is_node = Mock(return_value=True)
+
+        self._test_Gene_Repository_Dict = dict()
+        self._test_Gene_Repository_Dict.update({0:
+                                                Mock()})
+
+        self._mock_Gene_Repository = Mock()
+        self._mock_Gene_Repository.get =\
+            Mock(return_value=self._mock_Gene)
+        self._mock_Gene_Repository.__iter__ =\
+            Mock(return_value=self._test_Gene_Repository_Dict.__iter__())
+
         self._network = CNetwork(self._n_Test_ID,
-                                 self._mock_Network_Params)
+                                 self._mock_Network_Params,
+                                 self._mock_Gene_Repository)
         self._n_Test_Input_Node_Key = 1
         self._test_Input_Node = CNode(self._n_Test_Input_Node_Key)
 

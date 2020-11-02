@@ -6,10 +6,10 @@ class CGeneRepository:
         return iter(self._genes)
 
     def __next__(self):
-        return next(self._connections)
+        return next(self._genes)
 
     def __len__(self):
-        return len(self._connections)
+        return len(self._genes)
 
     def update(self, iterable):
         self._genes.update(iterable)

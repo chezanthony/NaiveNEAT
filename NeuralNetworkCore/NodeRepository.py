@@ -7,6 +7,8 @@ class CNodeRepository(INodeRepository):
         self._nodes = dict()
         self._innovation_Number = innovation_number
         self._gene_Repository = gene_repository
+        self._n_Min_Innovation_Number = 0
+        self._n_Max_Innovation_Number = 0
         INodeRepository.__init__(self)
 
     def __hash__(self):
@@ -30,6 +32,7 @@ class CNodeRepository(INodeRepository):
     def update(self, iterable):
         self._nodes.update(iterable)
         self._gene_Repository.update(iterable)
+        self._update_innovation_numbers()
 
     def get_innovation_number(self,
                               node_type,
@@ -50,3 +53,23 @@ class CNodeRepository(INodeRepository):
 
     def get(self, key):
         return self._nodes.get(key)
+
+    def get_nodes(self):
+        return self._nodes
+
+    def get_min_innovation_number(self):
+        return self._n_Min_Innovation_Number
+
+    def get_max_innovation_number(self):
+        return self._n_Max_Innovation_Number
+
+    def _update_innovation_numbers(self):
+        n_size = len(self._nodes)
+        keys = list(self._nodes.keys())
+        n_innovation_number = keys[n_size - 1]
+
+        if self._n_Min_Innovation_Number == 0:
+            self._n_Min_Innovation_Number = n_innovation_number
+
+        if self._n_Max_Innovation_Number < n_innovation_number:
+            self._n_Max_Innovation_Number = n_innovation_number

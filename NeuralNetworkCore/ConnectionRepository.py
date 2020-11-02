@@ -7,6 +7,8 @@ class CConnectionRepository(IConnectionRepository):
         self._connections = dict()
         self._innovation_Number = innovation_number
         self._gene_Repository = gene_repository
+        self._n_Min_Innovation_Number = 0
+        self._n_Max_Innovation_Number = 0
         IConnectionRepository.__init__(self)
 
     def __hash__(self):
@@ -56,6 +58,7 @@ class CConnectionRepository(IConnectionRepository):
     def update(self, iterable):
         self._connections.update(iterable)
         self._gene_Repository.update(iterable)
+        self._update_innovation_numbers()
 
     def pop(self, connection):
         n_innovation_number = connection.get_innovation_number()
@@ -71,3 +74,23 @@ class CConnectionRepository(IConnectionRepository):
             _innovation_Number.\
             get_connection_innovation_number(n_input_node,
                                              n_output_node)
+
+    def get_connections(self):
+        return self._connections
+
+    def get_min_innovation_number(self):
+        return self._n_Min_Innovation_Number
+
+    def get_max_innovation_number(self):
+        return self._n_Max_Innovation_Number
+
+    def _update_innovation_numbers(self):
+        n_size = len(self._connections)
+        keys = list(self._connections.keys())
+        n_innovation_number = keys[n_size - 1]
+
+        if self._n_Min_Innovation_Number == 0:
+            self._n_Min_Innovation_Number = n_innovation_number
+
+        if self._n_Max_Innovation_Number < n_innovation_number:
+            self._n_Max_Innovation_Number = n_innovation_number
