@@ -32,7 +32,3 @@ class IGenome(ABC):
     @abstractmethod
     def mutate(self):
         raise NotImplementedError
-
-    @abstractmethod
-    def reproduce(self):
-        raise NotImplementedError

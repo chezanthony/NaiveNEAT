@@ -1,6 +1,6 @@
-from NeuralNetworkCore.InnovationNumber import CInnovationNumber
 from NeuralNetworkCore.GeneRepository import CGeneRepository
 from NeuralNetworkCore.NetworkFactory import CNetworkFactory
+from NeuralNetworkCore.Evolution import CEvolution
 
 
 class CEnvironment:
@@ -15,17 +15,18 @@ class CEnvironment:
 
     def populate_environment(self,
                              network_params,
-                             population=10,
-                             n_input_nodes=1,
-                             n_output_nodes=1):
-        for nIndex in population:
+                             n_population=10):
+        for nIndex in range(n_population):
             network = CNetworkFactory.create_network(nIndex,
                                                      network_params,
-                                                     self._global_Gene_Repository,
-                                                     n_input_nodes,
-                                                     n_output_nodes)
+                                                     self._global_Gene_Repository)
             self._networks.update({nIndex:
                                    network})
 
-    def run_evolution(self):
-        pass
+    def run_evolution(self,
+                      n_iterations,
+                      n_target_fitness):
+        CEvolution.run_evolution(self._fitness_Function,
+                                 self._networks,
+                                 n_iterations,
+                                 n_target_fitness)

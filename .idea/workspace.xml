@@ -20,9 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b10fe84-2f83-4962-b5be-7187ffbeffa6" name="Default" comment="Remove NetworkTest.">
+      <change afterPath="$PROJECT_DIR$/NeuralNetworkCore/Evolution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/InnovationNumber.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/InnovationNumber.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/Network.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/Network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/Environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/Environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/Genome.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/Genome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/IGenome.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/IGenome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/NetworkConstants.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/NetworkConstants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/NetworkFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/NetworkFactory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/NetworkParams.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/NetworkParams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/NeuralNetworkModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/NeuralNetworkModule.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeuralNetworkCore/Reproduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkCore/Reproduction.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +58,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -216,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604310490694</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Remove NetworkTest.">
+      <created>1604326153761</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604326153761</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,14 +260,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Remove NetworkTest." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598018541789">
+    <state x="552" y="178" width="816" height="729" key="#Intentions" timestamp="1606057914789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598018541789" />
-    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598037161697">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598037161697" />
+    <state x="552" y="178" width="816" height="729" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1606057914789" />
     <state x="715" y="223" key="#xdebugger.evaluate" timestamp="1599469453855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -262,68 +271,51 @@
     <state width="1899" height="348" key="GridCell.Tab.0.bottom" timestamp="1604311216356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596656194195" />
     <state width="1899" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604311216356" />
     <state width="1899" height="348" key="GridCell.Tab.0.center" timestamp="1604311216356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596656194195" />
     <state width="1899" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604311216356" />
     <state width="1899" height="348" key="GridCell.Tab.0.left" timestamp="1604311216356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596656194193" />
     <state width="1899" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604311216356" />
     <state width="1899" height="348" key="GridCell.Tab.0.right" timestamp="1604311216356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596656194195" />
     <state width="1899" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604311216356" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1604311216356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596482534315" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604311216356" />
     <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1604311216356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1596482534315" />
     <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604311216356" />
     <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1604311216356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1596482534315" />
     <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604311216356" />
     <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1604311216356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1596482534315" />
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604311216356" />
     <state x="761" y="222" key="RollbackChangesDialog" timestamp="1604304828080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604304828080" />
-    <state x="259" y="10" key="SettingsEditor" timestamp="1598033115835">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1607029394411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596480192484" />
-    <state x="259" y="10" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598033115835" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604310498942">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607029394411" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604326159512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604310498942" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1597994600650">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597994600650" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598121834311">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604326159512" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1604837632573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598121834311" />
-    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1604325491500">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604325491500" />
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604837632573" />
     <state x="803" y="305" key="refactoring.ChangeSignatureDialog" timestamp="1598882772563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

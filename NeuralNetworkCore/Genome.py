@@ -1,4 +1,5 @@
 from NeuralNetworkCore.IGenome import IGenome
+from NeuralNetworkCore.Reproduction import CReproduction
 
 
 class CGenome(IGenome):
@@ -35,7 +36,4 @@ class CGenome(IGenome):
         return self._n_Fitness
 
     def mutate(self):
-        pass
-
-    def reproduce(self):
         pass
